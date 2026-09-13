@@ -1,12 +1,11 @@
-console.log("Hello World");
 function getComputerChoice() {
   const choices = ["rock", "paper", "scissors"];
   const randomIndex = Math.floor(Math.random() * 3);
   return choices[randomIndex];
 }
+
 function getHumanChoice() {
-  const choice = prompt("Rock, Paper, or Scissors?");
-  return choice;
+  return prompt("Rock, Paper, or Scissors?");
 }
 
 function playGame() {
@@ -15,7 +14,11 @@ function playGame() {
 
   function playRound(humanChoice, computerChoice) {
     const human = humanChoice.toLowerCase();
-    const beats = { rock: "scissors", paper: "rock", scissors: "paper" };
+    const beats = {
+      rock: "scissors",
+      paper: "rock",
+      scissors: "paper",
+    };
 
     if (human === computerChoice) {
       console.log(`Tie! Both chose ${computerChoice}`);
@@ -24,12 +27,14 @@ function playGame() {
       humanScore++;
     } else {
       console.log(`You lose! ${computerChoice} beats ${human}`);
-      computerChoice++;
+      computerScore++;
     }
   }
 
   for (let i = 0; i < 5; i++) {
-    playRound(getHumanChoice(), getComputerChoice());
+    const humanSelection = getHumanChoice();
+    const computerSelection = getComputerChoice();
+    playRound(humanSelection, computerSelection);
   }
 
   if (humanScore > computerScore) {
@@ -41,4 +46,4 @@ function playGame() {
   }
 }
 
-playGame
+playGame();
