@@ -1,10 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Rock Paper Scissors</title>
-    </head>
-    <body>
-        <script src="script.js"></script>
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- GAME TITLE -->
+  <h1>Rock Paper Scissors</h1>
+  
+  <!-- SCORE DISPLAY - Shows current scores -->
+  <div id="score">Human: 0 | Computer: 0</div>
+  
+  <!-- ROUND RESULTS - Shows each round's outcome -->
+  <div id="results"></div>
+  
+  <!-- CONTROLS SECTION -->
+  <div id="controls">
+    <h3>Make your choice:</h3>
+    
+    <!-- TODO: These buttons will trigger game rounds -->
+    <!-- Add event listeners in script.js after DOM loads -->
+    
+    <button class="rock-btn">🪨 Rock</button>
+    <button class="paper-btn">📄 Paper</button>
+    <button class="scissors-btn">✂️ Scissors</button>
+  </div>
+  
+  <!-- GAME STATUS/MESSAGE AREA -->
+  <div id="game-status"></div>
+  
+  <!-- LINK TO YOUR JAVASCRIPT FILE -->
+  <script src="script.js"></script>
+  
+</body>
 </html>
