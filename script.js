@@ -63,7 +63,7 @@ function playGame() {
   enableButtons();
   
   // Announce game start
-  displayResult("<p><strong>🎮 New Game Started! First to 5 points wins!</strong></p>");
+  displayResult("<p><strong>New Game Started! First to 5 points wins!</strong></p>");
 }
 
 
@@ -154,10 +154,10 @@ function announceWinner() {
   let winnerMessage = "";
   
   if (humanScore >= 5) {
-    winnerMessage = `<h2>🎉 YOU WIN the game ${humanScore} to ${computerScore}! 🎉</h2>`;
+    winnerMessage = `<h2>YOU WIN the game ${humanScore} to ${computerScore}!</h2>`;
     gameStatusDiv.style.color = "green";
   } else if (computerScore >= 5) {
-    winnerMessage = `<h2>💻 Computer wins the game ${computerScore} to ${humanScore}! 💻</h2>`;
+    winnerMessage = `<h2>Computer wins the game ${computerScore} to ${humanScore}!</h2>`;
     gameStatusDiv.style.color = "red";
   } else {
     winnerMessage = `<h2>It's a tie at ${humanScore} to ${computerScore}!</h2>`;
