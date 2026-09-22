@@ -1,0 +1,167 @@
+/* ================================
+   ROCK PAPER SCISSORS - STYLES
+   ================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+#score {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+#game-status {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  min-height: 50px;
+}
+
+#controls {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  display: flex;
+  gap: 20px;
+}
+
+#controls h3 {
+  margin-bottom: 15px;
+}
+
+.game-btn {
+  background: white;
+  color: #333;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.game-btn:hover:not(:disabled) {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  background: #f0f0f0;
+}
+
+.game-btn:active:not(:disabled) {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+#reset-section {
+  margin: 20px 0;
+}
+
+.reset-btn {
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.reset-btn:hover {
+  background: #ee5a5a;
+  transform: scale(1.05);
+}
+
+.results {
+  text-align: center;
+}
+
+#results {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  min-height: 150px;
+  margin: 10px 0;
+}
+
+#results p {
+  margin: 8px 0;
+  padding: 8px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+#results strong {
+  font-size: 1.2rem;
+}
+
+#results p:first-child {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+  
+  #score {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  #controls {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .game-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+  
+  #game-status {
+    font-size: 1.3rem;
+  }
+}

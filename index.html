@@ -10,27 +10,30 @@
   
   <!-- GAME TITLE -->
   <h1>Rock Paper Scissors</h1>
+  <p>First to 5 points wins!</p>
   
   <!-- SCORE DISPLAY - Shows current scores -->
-  <div id="score">Human: 0 | Computer: 0</div>
+  <div id="score">Human: 0 | Computer: 0 | Rounds: 0</div>
   
-  <!-- ROUND RESULTS - Shows each round's outcome -->
-  <div id="results"></div>
+  <!-- GAME STATUS - Shows winner announcement -->
+  <div id="game-status"></div>
   
   <!-- CONTROLS SECTION -->
   <div id="controls">
     <h3>Make your choice:</h3>
     
-    <!-- TODO: These buttons will trigger game rounds -->
-    <!-- Add event listeners in script.js after DOM loads -->
-    
-    <button class="rock-btn">🪨 Rock</button>
-    <button class="paper-btn">📄 Paper</button>
-    <button class="scissors-btn">✂️ Scissors</button>
+    <button class="game-btn rock-btn">🪨 Rock</button>
+    <button class="game-btn paper-btn">📄 Paper</button>
+    <button class="game-btn scissors-btn">✂️ Scissors</button>
   </div>
   
-  <!-- GAME STATUS/MESSAGE AREA -->
-  <div id="game-status"></div>
+  <div id="reset-section">
+    <button class="reset-btn">🔄 New Game</button>
+  </div>
+  
+  <!-- ROUND RESULTS - Shows each round's outcome -->
+  <h3>Round History</h3>
+  <div id="results"></div>
   
   <!-- LINK TO YOUR JAVASCRIPT FILE -->
   <script src="script.js"></script>
